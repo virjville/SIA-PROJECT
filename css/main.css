@@ -1,0 +1,25 @@
+.main-header {
+  background: url(../img/moscow.jpg);
+  min-height: 600px;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+.active-link {
+  color: #151580;
+  font-weight: bold;
+}
+
+.main-header  .showcase{
+  padding-top: 100px;
+
+}
+
+h6{
+  font-family: 'Berkshire Swash', cursive;
+  font-family: 'Volkhov', serif;
+}
+h6{font-family: 'Ultra', serif;
+  font-family: 'Volkhov', serif;
+
+}
