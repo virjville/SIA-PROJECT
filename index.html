@@ -35,10 +35,10 @@
               <a href="index.html" class="active-link">Home</a>
             </li>
             <li>
-              <a href="index.html">Updates</a>
+              <a href="updates.html">Updates</a>
             </li>
             <li>
-              <a href="index.html">Sign Up</a>
+              <a href="signup.html">Sign Up</a>
             </li>
             <li>
               <a href="#login-modal" class="btn blue modal-trigger">Login</a>
@@ -79,9 +79,9 @@
     </li>
   </ul>
 <!-- showcase -->
-<div class="container">
+
 <div class="row">
-  <div class="col m8">
+  <div class="col s12 m6">
     <div class="card">
       <div class="card-content blue lighten-1">
         <div class="card-content white-text">
@@ -102,13 +102,29 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col s12 m4">
-        <!-- card with image -->
-        <img src="img/financialliteracy.jpg" alt="">
-      </div>
+  </div>
+  <div class="col s12 m6">
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="img/fulfilment.jpg" alt="" class="responsive-img">
+        </li>
+        <li>
+          <img src="img/time.jpg" alt="" class="responsive-img">
+        </li>
+        <li>
+          <img src="img/travel.jpg" alt=""  class="responsive-img">
+        </li>
+        <li>
+          <img src="img/diakoatm.jpg" alt="" class="responsive-img">
+        </li>
+        <li>
+          <img src="img/panic.jpg" alt=""  class="responsive-img">
+        </li>
+      </ul>
     </div>
   </div>
+</div>
 </div>
 </div>
 </header> 
@@ -133,7 +149,7 @@
   
 <div class="col s12 m6">
   <!--Card Reveal -->
-     <div class="card medium">
+     <div class="card small">
       <div class="card-image waves-effect waves-light">
           <img src="img/kaiser.jpg" alt="" class="activator">
       </div>
@@ -153,31 +169,62 @@
     </div>
 </div>
 </div>
+</div>
+   <!--Responsive video Embed  -->
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="video container">
+        <iframe width="436" height="245" src="https://www.youtube.com/embed/Vh_Nh8thRdE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="col s12 m6">
+      <div class="video container">
+        <iframe width="436" height="245" src="https://www.youtube.com/embed/7tsvrbDrLgs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
   </div>
-  <!-- slide -->
+
+ <!-- Section: Testimonial -->
+ <section class="section section-testimonial grey lighten-4">
   <div class="container">
-  <div class="slider">
-    <ul class="slides">
-      <li>
-      <img src="img/everest.jpg" alt="">
-      </li>
-      <li>
-      <img src="img/autoprogram.jpg" alt="">
-      </li>
-      <li>
-      <img src="img/visioncare.jpg" alt="">
-      </li>
-      <li>
-      <img src="img/manilabankers.jpg" alt="">
-      </li>
-      <li>
-      <img src="img/soldivo.jpg" alt="">
-      </li>
-    </ul>
-  </div> 
-  </div> 
+    <div class="col s12">
+      <div class="carousel carousel-slider center">
+        <div class="carousel-item">
+          <h2>Testimonial 1</h2>
+            <p class="flow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident veritatis quasi necessitatibus tempora aliquid unde molestias enim nostrum, officia eius nihil aut natus adipisci inventore possimus pariatur perspiciatis eum cumque?
+            <br>
+            <em>-Alma</em>
+            </p>
+            <div class="carousel-fixed-item center hide-on-small-and-down">
+              <a href="#" class="btn grey">Read More</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <h2>Testimonial 2</h2>
+            <p class="flow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident veritatis quasi necessitatibus tempora aliquid unde molestias enim nostrum, officia eius nihil aut natus adipisci inventore possimus pariatur perspiciatis eum cumque?
+            <br>
+            <em>-Jing</em>
+            </p>
+            <div class="carousel-fixed-item center hide-on-small-and-down">
+              <a href="#" class="btn grey">Read More</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <h2>Testimonial 3</h2>
+            <p class="flow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident veritatis quasi necessitatibus tempora aliquid unde molestias enim nostrum, officia eius nihil aut natus adipisci inventore possimus pariatur perspiciatis eum cumque?
+            <br>
+            <em>-Imee</em>
+            </p>
+            <div class="carousel-fixed-item center hide-on-small-and-down">
+              <a href="#" class="btn grey">Read More</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
 </div>
+</section>
 
 
   <!-- Footer -->
@@ -256,11 +303,15 @@
     //slider init
     $('.slider').slider({
       indicators: true,
-      height:600,
+      height:420,
       interval: 3000,
     }
 
     );
+     // Carousel slider
+     $('.carousel.carousel-slider').carousel({
+    fullWidth: true
+    });
   });
 
 </script>

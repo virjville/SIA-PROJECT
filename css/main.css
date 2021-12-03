@@ -1,6 +1,6 @@
 .main-header {
   background: url(../img/moscow.jpg);
-  min-height: 600px;
+  min-height: 800px;
   background-position: center;
   background-size: cover;
   color: white;
@@ -22,4 +22,24 @@ h6{
 h6{font-family: 'Ultra', serif;
   font-family: 'Volkhov', serif;
 
+}
+
+.parallax-container {
+  background-position: center;
+  background-size: cover;
+}
+.img img{
+  position: relative;
+  vertical-align: middle;
+}
+
+.img img{
+  width: 50%;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
